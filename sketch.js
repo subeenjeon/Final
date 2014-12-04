@@ -11,13 +11,14 @@ function setup() {
 
 function draw() {
   background(0);
-  image(pt,0,0);
-
+  
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <5 ; j++){
 
         fill(10*i,20*j,0);
         rect(i*200, j*200,200,200);
+        image(pt,i*200,j*200);
+
 
     }
   }
