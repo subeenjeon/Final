@@ -1,9 +1,14 @@
-var a = new Array(sketch.windowWidth);
 var pt;
 var checkDraw = [];
 var sound;
 var amp;
 var a; 
+
+
+var count;
+function preload(){
+  sound = loadSound("./ODESZA - Bloom.mp3")
+}
 
 function setup() {
   createCanvas(2000, 1000);
@@ -15,23 +20,7 @@ function setup() {
 
 }
 
-var count;
-function preload(){
-  sound = loadSound("./ODESZA - Bloom.mp3")
-}
-
-var s = function( sketch ) {
-  var drums, follow
-
-    sketch.setup = function() {
-    sketch.createCanvas( sketch.windowWidth, sketch.windowHeight )
-
-    drums = sketch.Gibber.Percussion.EDrums('x*x*x*o-')
-    follow = sketch.Gibber.Analysis.Follow( drums )
-  };
-
 function draw() {
-  sketch.background( follow.getValue() * 255 )
   background(0);
   a = map(amp.getLevel(),0,1,0,50);
   for(var i = 0 ; i <10 ; i++){
@@ -40,11 +29,8 @@ function draw() {
      }
   }
 
-  var myp5 = new p5( s )
-  
   count++;
   if(count > 200){
     count =0;
   }
 }
-
