@@ -1,5 +1,5 @@
 var soundFile;
-var rSlider, gSlider, bSlider;
+
 
 var fft;
 var fftBands = 1024;
@@ -16,16 +16,6 @@ function setup() {
   strokeWeight(4);
 
   fft = new p5.FFT(0, fftBands);
-
-  sampler = Sampler().record( soundFile, 1 )
-    .note.seq( [.25,.5,1,2].rnd(), [1/4,1/8,1/2].rnd() )
-    .fx.add( Delay(1/64))
-    .pan.seq( Rndf(-1,1) )
-
-  bass = Mono('bass')
-    .note.seq( [0,7], 1/8 )
-
-  Gibber.scale.root.seq( ['c4','eb4'], 1 )
 
 
 console.log("dddddD");
