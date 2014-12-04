@@ -5,7 +5,9 @@ var fftBands = 1024;
 
 // Array of amplitude values (0-255) over time.
 var waveform = [];
-
+function preload(){
+	soundFile = loadSound('./ODESZA - Bloom.mp3');
+}
 function setup() {
   createCanvas(fftBands, 500);
   fill(255, 40, 255);
@@ -21,7 +23,7 @@ console.log("dddddD");
   
   
   // load the soundfile in setup, but we won't play it until user hits 'T'
-  soundFile = loadSound('./ODESZA - Bloom.mp3');
+  
   soundFile.play();
 }
 
