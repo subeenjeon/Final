@@ -1,4 +1,4 @@
-// var a = new Array(sketch.windowWidth);
+var a = new Array(800);
 var sound;
 function preload(){
 	sound = loadSound('ODESZA - Bloom.mp3');
@@ -12,13 +12,17 @@ function setup(){
 
 
 function draw(){
-background(255);
-if(sound.isPlaying()){
-	fill(0,255,0);
-}else{
-	fill(255,0,0);
-}
-rect(0,0,100,100);
+	background(255);
+	if(sound.isPlaying()){
+		fill(0,255,0);
+	}else{
+		fill(255,0,0);
+	}
+	noStroke();
+	for(var i = 0; i < 800 ; i++){
+		rect(i,0,1,getPeaks[i]);
+	}
+
 
 }
 
