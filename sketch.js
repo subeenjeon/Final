@@ -14,7 +14,10 @@ function preload(){
 
 function setup() {
   createCanvas(fftBands, 1000);
-  background(0);
+  fill(255, 40, 255);
+  stroke(240);
+  strokeWeight(4);
+
   pt = loadImage("./home-pattern.jpg");
   count = 0;
 
