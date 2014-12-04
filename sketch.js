@@ -21,7 +21,7 @@ console.log("dddddD");
   
   
   // load the soundfile in setup, but we won't play it until user hits 'T'
-  soundFile = loadSound('ODESZA - Bloom.mp3');
+  soundFile = loadSound('./ODESZA - Bloom.mp3');
 }
 
 function draw() {
