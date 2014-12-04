@@ -16,7 +16,7 @@ function setup() {
   createCanvas(2000, 1000);
   background(0);
   pattern = loadImage("home-pattern.jpg");
-  for(var i = 0; i<10 ;i++){
+  for(var i = 0; i<50 ;i++){
   	checkDraw[i] = true;
   }
 
@@ -34,8 +34,9 @@ function draw() {
 
   for(var i = 0 ; i <10 ; i++){
   	for(var j = 0 ; j <5 ; i++){
-  		if(checkDraw[i]){
-  			rect((i-j*2)*200, j*200,2000,1000);
+  		if(checkDraw[i+j*5]){
+  			fill(10*i,20*j,0);
+  			rect((i-j*2)*200, j*200,200,200);
   		}
   	}
   }
