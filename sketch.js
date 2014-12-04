@@ -18,7 +18,7 @@ function setup() {
   strokeWeight(4);
 
 
-  soundFile.play();
+  //soundFile.play();
 }
 
 function draw() {
@@ -29,7 +29,7 @@ function draw() {
   	for(var j = 0 ; j <5 ; i++){
   		if(checkDraw[i+j*5]){
   			fill(10*i,20*j,0);
-  			rect((i-j*2)*200, j*200,200,200);
+  			rect(i*200, j*200,200,200);
   		}
   	}
   }
