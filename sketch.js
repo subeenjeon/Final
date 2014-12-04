@@ -15,7 +15,7 @@ function preload(){
 function setup() {
   createCanvas(2000, 1000);
   background(0);
-  pattern = loadImage("home-pattern");
+  pattern = loadImage("home-pattern.jpg");
   for(var i = 0; i<10 ;i++){
   	checkDraw[i] = true;
   }
