@@ -42,7 +42,7 @@ function draw() {
   // }
   // endShape();
 
-  fill(255,map(waveform[0], 0, 256, 0,255);
+  fill(255,map(waveform[0], 0, 256, 0,255));
   	rect(0,0,width,height);
 
 
