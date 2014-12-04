@@ -17,17 +17,6 @@ function setup() {
 
   fft = new p5.FFT(0, fftBands);
 
-  textSize(15)
-  noStroke();
-
-  // create sliders
-  rSlider = createSlider(0, 255, 100);
-  rSlider.position(20, 20);
-  gSlider = createSlider(0, 255, 0);
-  gSlider.position(20, 50);
-  bSlider = createSlider(0, 255, 255);
-  bSlider.position(20, 80);
-
 
 console.log("dddddD");
   
@@ -36,14 +25,6 @@ console.log("dddddD");
 }
 
 function draw() {
-  var r = rSlider.value();
-  var g = gSlider.value();
-  var b = bSlider.value();
-  background(r, g, b);
-  text("red", 165, 35);
-  text("green", 165, 65);
-  text("blue", 165, 95);
-  	
   background(0);
 
   waveform = fft.waveform();
