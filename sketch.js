@@ -4,7 +4,7 @@ var sound;
 var amp;
  var a 
 function preload(){
-  sound = loadSound("./ODESZA - Bloom.mp4")
+  sound = loadSound("./ODESZA - Bloom.mp3")
 }
 
 function setup() {
@@ -21,7 +21,7 @@ function draw() {
   a = map(amp.getLevel(),0,1,0,50);
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <5 ; j++){
-        image(pt,i*200,j*200);
+        image(pt,i*200-a/2,j*200-a/2,200+a,200+a);
      }
   }
 
