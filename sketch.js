@@ -15,15 +15,11 @@ function setup() {
   fft = new p5.FFT(0, fftBands);
 
   // set up other inputs we may use by toggling input
-  mic = new p5.AudioIn();
-  osc = new p5.Oscillator();
-  osc.amp(0.5);
-  osc.freq(10);
 
 
-  mic.start();
-  fft.setInput(mic);
-
+console.log("dddddD");
+  
+  
   // load the soundfile in setup, but we won't play it until user hits 'T'
   soundFile = loadSound('ODESZA - Bloom.mp3');
 }
@@ -46,8 +42,7 @@ function draw() {
   endShape();
 
   // map the oscillator frequency to mouse position
-  var freq = map(mouseX, 0, windowWidth, 1, 440);
-  osc.freq(freq);
+ 
 }
 
 // TOGGLE INPUT
