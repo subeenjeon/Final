@@ -10,8 +10,9 @@ function setup() {
   createCanvas(2000, 1000);
   background(0);
   pt = loadImage("./home-pattern.jpg");
-  sound.play();
   amp = new p5.Amplitude();
+  sound.play();
+  
 }
 
 function draw() {
