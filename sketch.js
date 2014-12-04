@@ -20,7 +20,7 @@ function draw() {
   background(0);
   a = map(amp.getLevel(),0,1,0,50);
   for(var i = 0 ; i <10 ; i++){
-    for(var j = 0 ; j <5 ; j++){
+    for(var j = 0 ; j <6 ; j++){
         image(pt,i*200-a/2,j*200-a/2,200+a,200+a);
      }
   }
