@@ -22,6 +22,7 @@ console.log("dddddD");
   
   // load the soundfile in setup, but we won't play it until user hits 'T'
   soundFile = loadSound('./ODESZA - Bloom.mp3');
+  soundFile.play();
 }
 
 function draw() {
@@ -33,13 +34,17 @@ function draw() {
   waveform = fft.waveform();
 
   // draw snapshot of the waveform
-  beginShape();
-  for (var i = 0; i<waveform.length; i++){
-    var x = map(i, 0, waveform.length, 0, width);
-    var y = map(waveform[i], 0, 256, -height/2, height/2);
-    vertex(x, y + height/2);
-  }
-  endShape();
+  // beginShape();
+  // for (var i = 0; i<waveform.length; i++){
+  //   var x = map(i, 0, waveform.length, 0, width);
+  //   var y = map(waveform[i], 0, 256, -height/2, height/2);
+  //   vertex(x, y + height/2);
+  // }
+  // endShape();
+
+  fill(255,map(waveform[i], 0, 256, 0,255);
+  	rect(0,0,width,height);
+
 
   // map the oscillator frequency to mouse position
  
