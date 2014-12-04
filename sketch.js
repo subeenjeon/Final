@@ -3,7 +3,7 @@ var pattern;
 var checkDraw = [];
 
 function preload(){
-	soundFile = loadSound('./ODESZA - Bloom.mp3');
+	// soundFile = loadSound('./ODESZA - Bloom.mp3');
 }
 
 function setup() {
@@ -14,8 +14,6 @@ function setup() {
   	checkDraw[i] = true;
   }
 
-  stroke(240);
-  strokeWeight(4);
 
 
   //soundFile.play();
