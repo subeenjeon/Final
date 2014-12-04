@@ -3,6 +3,7 @@ var checkDraw = [];
 var sound;
 
 var fft;
+var fftBands = 2000;
 
 var count;
 
@@ -12,7 +13,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(2000, 1000);
+  createCanvas(fftBands, 1000);
   background(0);
   pt = loadImage("./home-pattern.jpg");
   count = 0;
@@ -29,7 +30,7 @@ function draw() {
 
   fill(255,map(waveform[0], 0, 256, 0,255));
     rect(0,0,width,height);
-    
+
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <6 ; j++){
         image(pt,i*200,j*200-count,200,200);
