@@ -2,7 +2,7 @@ var pt;
 var checkDraw = [];
 var sound;
 var amp;
- var a 
+var a; 
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp3")
 }
