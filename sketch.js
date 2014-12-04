@@ -1,7 +1,7 @@
 var pt;
 var checkDraw = [];
 var sound;
-
+var amp;
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp4")
 }
@@ -11,11 +11,12 @@ function setup() {
   background(0);
   pt = loadImage("./home-pattern.jpg");
   sound.play();
+  amp = new p5.Amplitude();
 }
 
 function draw() {
   background(0);
-  var a = map(sound.Amplitude(),0,1,0,50);
+  var a = map(amp.getLevel(),0,1,0,50);
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <5 ; j++){
 
