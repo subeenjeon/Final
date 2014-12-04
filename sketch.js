@@ -1,36 +1,38 @@
+var a = new Array(sketch.windowWidth);
 var pt;
 var checkDraw = [];
 var sound;
 var amp;
 var a; 
 
-var fft;
+function setup() {
+  createCanvas(2000, 1000);
+  background(0);
+  pt = loadImage("./home-pattern.jpg");
+  amp = new p5.Amplitude();
+  sound.loop();
+  count = 0;
+
+}
 
 var count;
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp3")
 }
 
-function setup() {
-  createCanvas(2000, 1000);
-  fill(255, 40, 255);
-  stroke(240);
-  strokeWeight(4);
-  background(0);
-  pt = loadImage("./home-pattern.jpg");
-  amp = new p5.Amplitude();
-  sound.loop();
-  count = 0;
-  fft = new p5.FFT(0, 2000);
-}
+var s = function( sketch ) {
+  var drums, follow
+
+    sketch.setup = function() {
+    sketch.createCanvas( sketch.windowWidth, sketch.windowHeight )
+
+    drums = sketch.Gibber.Percussion.EDrums('x*x*x*o-')
+    follow = sketch.Gibber.Analysis.Follow( drums )
+  };
 
 function draw() {
+  sketch.background( follow.getValue() * 255 )
   background(0);
-
-  waveform = fft.waveform();
-
-  fill(255,map(waveform[0], 0, 256, 0, 255));
-    rect(0,0,width,height);
   a = map(amp.getLevel(),0,1,0,50);
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <6 ; j++){
@@ -38,8 +40,11 @@ function draw() {
      }
   }
 
+  var myp5 = new p5( s )
+  
   count++;
   if(count > 200){
     count =0;
   }
 }
+
