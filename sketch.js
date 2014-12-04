@@ -1,17 +1,17 @@
-var pattern;
+var pt;
 var checkDraw = [];
 
 
 function setup() {
   createCanvas(2000, 1000);
   background(0);
-  
+  pt = loadImage("./home-pattern.jpg");
 
 }
 
 function draw() {
   background(0);
-
+  image(pt,0,0);
 
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <5 ; j++){
