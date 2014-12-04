@@ -1,0 +1,35 @@
+var a = new Array(sketch.windowWidth);
+var sound;
+function preload(){
+	sound = loadSound('ODESZA - Bloom.mp3');
+}
+
+function setup(){
+
+	createCanvas(sketch.windowWidth,sketch.windowHeight);
+	sound.play();
+}
+
+
+function draw(){
+
+
+}
+
+
+// var s = function( sketch ) {
+//   var drums, follow
+  
+//   sketch.setup = function() {
+//     sketch.createCanvas( sketch.windowWidth, sketch.windowHeight )
+
+//     drums = sketch.Gibber.Percussion.EDrums('x*x*x*o-')
+//     follow = sketch.Gibber.Analysis.Follow( drums )
+//   };
+
+//   sketch.draw = function() {
+//     sketch.background( follow.getValue() * 255 )
+//   }
+// }
+
+// var myp5 = new p5( s )
