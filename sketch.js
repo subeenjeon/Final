@@ -43,8 +43,8 @@ function draw() {
   text("red", 165, 35);
   text("green", 165, 65);
   text("blue", 165, 95);
-  	
-  background(0);
+
+
 
   waveform = fft.waveform();
 
