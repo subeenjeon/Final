@@ -58,7 +58,7 @@ function keyPressed() {
 }
 
 // start with mic as input
-var inputMode = 1;
+var inputMode = 0;
 
 function toggleInput() {
   inputMode += 1;
