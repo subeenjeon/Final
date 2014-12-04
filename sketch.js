@@ -20,7 +20,7 @@ function draw(){
 	}
 	noStroke();
 	for(var i = 0; i < 800 ; i++){
-		rect(i,0,1,getPeaks[i]);
+		rect(i,0,1,sound.getPeaks[i]);
 	}
 
 
