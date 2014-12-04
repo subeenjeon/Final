@@ -15,15 +15,14 @@ function setup() {
   fill(255, 40, 255);
   stroke(240);
   strokeWeight(4);
-  soundFile.loop(); 
-  // create a new Amplitude analyzer
-  analyzer = new p5.Amlitude();
-  // Patch the input to an volume analyzer
-  analyzer.sotInput(song);
 
   fft = new p5.FFT(0, fftBands);
 
- 
+
+console.log("dddddD");
+  
+  
+  soundFile.play();
 }
 
 function draw() {
@@ -34,15 +33,6 @@ function draw() {
 
   fill(255,map(waveform[0], 0, 256, 0,255));
   	rect(0,0,width,height);
-
- // Get the overall volume (between 0 and 1.0)
-  var vol = analyzer.getLevel();
-  fill(127);
-  stroke(0);
-
-  // Draw an ellipse with size based on volume
-  ellipse(width/2, height/2, 10+vol*200, 10+vol*200);
-
 }
 
 // TOGGLE INPUT
