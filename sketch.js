@@ -1,8 +1,7 @@
 var pt;
 var checkDraw = [];
 var sound;
-var amp;
-var a; 
+
 
 
 var count;
@@ -14,7 +13,6 @@ function setup() {
   createCanvas(2000, 1000);
   background(0);
   pt = loadImage("./home-pattern.jpg");
-  amp = new p5.Amplitude();
   sound.loop();
   count = 0;
 
