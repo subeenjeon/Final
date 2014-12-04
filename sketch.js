@@ -5,7 +5,7 @@ var checkDraw = [];
 function setup() {
   createCanvas(2000, 1000);
   background(0);
-  pattern = loadImage("home-pattern.jpg");
+  
 
 }
 
