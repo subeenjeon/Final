@@ -4,6 +4,8 @@ var sound;
 var amp;
 var a; 
 
+var fft;
+
 var count;
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp3")
@@ -14,12 +16,19 @@ function setup() {
   background(0);
   pt = loadImage("./home-pattern.jpg");
   amp = new p5.Amplitude();
-  sound.play();
+  sound.loop();
   count = 0;
+  fft = new p5.FFT(0, 2000);
 }
 
 function draw() {
   background(0);
+
+  waveform = fft.waveform();
+
+  fill(255,map(waveform[0], 0, 256, 0, 255));
+    rect(0,0,width,height);
+    
   a = map(amp.getLevel(),0,1,0,50);
   for(var i = 0 ; i <10 ; i++){
     for(var j = 0 ; j <6 ; j++){
