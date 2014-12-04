@@ -1,4 +1,6 @@
 var soundFile;
+var pattern;
+var checkDraw = [];
 
 
 var fft;
@@ -11,22 +13,32 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(fftBands, 500);
-  fill(255, 40, 255);
+  createCanvas(2000, 1000);
+  background(0);
+  pattern = loadImage("home-pattern");
+  for(var i = 0; i<10 ;i++){
+  	checkDraw[i] = true;
+  }
+
   stroke(240);
   strokeWeight(4);
 
   fft = new p5.FFT(0, fftBands);
 
-
-console.log("dddddD");
-  
-  
   soundFile.play();
 }
 
 function draw() {
   background(0);
+  image(pattern,0,0);
+
+  for(var i = 0 ; i <10 ; i++){
+  	for(var j = 0 ; j <5 ; i++){
+  		if(checkDraw[i]){
+  			rect((i-j*2)*200, j*200,2000,1000);
+  		}
+  	}
+  }
 
   waveform = fft.waveform();
 
