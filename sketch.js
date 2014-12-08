@@ -32,7 +32,7 @@ function draw() {
   }
 }
 
-function text(){
+function word(){
     fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
     stroke(255);
     textSize(20);
