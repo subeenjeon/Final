@@ -32,9 +32,9 @@
      inkscape:window-height="1018"
      id="namedview3003"
      showgrid="false"
-     inkscape:zoom="0.95035151"
-     inkscape:cx="537.03213"
-     inkscape:cy="190.10244"
+     inkscape:zoom="0.47517576"
+     inkscape:cx="708.27535"
+     inkscape:cy="356.1657"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -46,8 +46,8 @@
      version="1.1"
      inkscape:version="0.48.5 r10040"
      sodipodi:docname="title.svg"
-     transform="translate(-269.37401,-250.43365)"
-     style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">
+     style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none"
+     transform="translate(465.09107,-107.32871)">
     <defs
        id="defs2987" />
     <sodipodi:namedview
@@ -152,6 +152,6 @@
          sodipodi:role="line"
          id="tspan3779"
          x="453.86905"
-         y="329.46429"></tspan></text>
+         y="329.46429" /></text>
   </svg>
 </svg>
