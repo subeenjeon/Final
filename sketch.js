@@ -30,7 +30,6 @@ function draw() {
   if(count > 200){
     count =0;
   }
-}
 
 function word(){
     fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
@@ -38,4 +37,5 @@ function word(){
     textSize(120);
     textFont("Helvetica");
     text("Subeen Jeon", 500, 1000);
+  }
 }
