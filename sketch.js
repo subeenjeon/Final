@@ -12,7 +12,7 @@ function preload(){
 }
 
 function setup() {
-  var mycan= createCanvas(2000,1000);
+  var mycan= createCanvas(1800,1000);
   mycan.parent('jsCanvas');
 
   background(0);
