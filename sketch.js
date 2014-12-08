@@ -31,10 +31,4 @@ function draw() {
     count =0;
   }
 
-function word(){
-    stroke(255);
-    textSize(120);
-    textFont("Helvetica");
-    text("Subeen Jeon", 500, 1000);
-}
 }
