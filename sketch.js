@@ -1,4 +1,3 @@
-var center;
 var pt;
 var checkDraw = [];
 var sound, amp;
@@ -37,5 +36,5 @@ function draw() {
     count =0;
   }
 
-  image(center, 1000, 500, 10+amp.getLevel()*300,10+amp.getLevel()*300);
+  image(centerimg, mouseX, mouseY, 10+amp.getLevel()*300,10+amp.getLevel()*300);
 }
