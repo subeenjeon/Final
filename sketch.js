@@ -19,7 +19,7 @@ function setup() {
   pt = loadImage("./home-pattern.jpg");
 
   centerimg = loadImage("./center.png");
-  position: absolute;
+
   sound.loop();
   count = 0;
 
