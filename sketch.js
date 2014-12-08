@@ -3,8 +3,8 @@ var checkDraw = [];
 var sound;
 
 var fft;
-var waveform = [];
 var count;
+
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp3")
 }
@@ -30,4 +30,12 @@ function draw() {
   if(count > 200){
     count =0;
   }
+}
+
+function text(){
+    fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+    stroke(255);
+    textSize(100);
+    textFont("Helvetica");
+    text("Subeen Jeon", 130, 250);
 }
