@@ -14,12 +14,12 @@ function preload(){
 function setup() {
   var mycan= createCanvas(2000,1000);
   mycan.parent('jsCanvas');
-  
+
   background(0);
   pt = loadImage("./home-pattern.jpg");
 
   centerimg = loadImage("./center.png");
-
+  position: absolute;
   sound.loop();
   count = 0;
 
