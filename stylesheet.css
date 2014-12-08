@@ -11,8 +11,6 @@
           height: 110px; //ADJUST HEIGHT TO MATCH HEIGHT OF YOUR TEXT
       }
 
-<path class="title" fill-opacity="0" stroke="#000" stroke-width="1.5"
-
 .title {
         stroke-dasharray: 500;
                 stroke-dashoffset: 500;

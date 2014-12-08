@@ -2,6 +2,8 @@ var pt;
 var checkDraw = [];
 var sound;
 
+var centerimg;
+
 var fft;
 var count;
 
@@ -13,6 +15,9 @@ function setup() {
   createCanvas(2000, 1000);
   background(0);
   pt = loadImage("./home-pattern.jpg");
+
+  centerimg = loadImage("./center.png");
+  
   sound.loop();
   count = 0;
 
