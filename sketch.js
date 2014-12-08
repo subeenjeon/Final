@@ -35,7 +35,7 @@ function draw() {
 function word(){
     fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
     stroke(255);
-    textSize(20);
+    textSize(120);
     textFont("Helvetica");
-    text("Subeen Jeon", 130, 250);
+    text("Subeen Jeon", 500, 1000);
 }
