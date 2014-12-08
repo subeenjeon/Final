@@ -12,7 +12,9 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(2000, 1000);
+  var mycan= createCanvas(2000,1000);
+  mycan.parent('jsCanvas');
+  
   background(0);
   pt = loadImage("./home-pattern.jpg");
 
