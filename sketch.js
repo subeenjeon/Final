@@ -16,7 +16,7 @@ function setup() {
   mycan.parent('jsCanvas');
 
   background(0);
-  pt = loadImage("./home-pattern.jpg");
+  pt = loadImage("./home-pattern.png");
 
   img = loadImage("./center.png");
 
