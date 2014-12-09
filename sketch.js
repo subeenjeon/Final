@@ -1,9 +1,8 @@
 var pt;
 var checkDraw = [];
-var sound, amp;
+var sound, analyzer;
 
 var img1;
-
 var img2;
 
 var fft;
@@ -42,6 +41,8 @@ function draw() {
   if(count > 200){
     count =0;
   }
+
+  var vol = analyzer.getLevel();
 
   image(img1, 430, 300, 10+vol*200, 10+vol*200);
   image(img2, 1225, 300, 10+vol*200, 10+vol*200);
