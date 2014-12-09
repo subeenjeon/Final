@@ -24,6 +24,8 @@ function setup() {
   img2 = loadImage("./right.png");
 
   sound.loop();
+  analyzer = new p5.Amplitude();
+
   count = 0;
 
 }
@@ -41,6 +43,6 @@ function draw() {
     count =0;
   }
 
-  image(img1, 430, 300);
-  image(img2, 1225, 300);
+  image(img1, 430, 300, 10+vol*200, 10+vol*200);
+  image(img2, 1225, 300, 10+vol*200, 10+vol*200);
 }  
