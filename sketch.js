@@ -42,5 +42,5 @@ function draw() {
   }
 
   image(img1, 430, 300);
-  image(img2, 1400, 300);
+  image(img2, 1330, 300);
 }  
