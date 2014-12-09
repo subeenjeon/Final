@@ -51,7 +51,7 @@ function draw() {
 
 function word(){
   fill(0);
-  textSize(200);
+  textSize(20);
   textFont();
   text("Hello! I'm subeen Jeon. You can visited my SNS", 130, 250);
 }
