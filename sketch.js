@@ -40,6 +40,6 @@ function draw() {
     count =0;
   }
 
-  image(img1, 400, 300, 10+amp.getLevel()*300,10+amp.getLevel()*300);
-  image(img2, 1200, 300, 10+amp.getLevel()*300,10+amp.getLevel()*300);
+  image(img1, 400, 300);
+  image(img2, 1200, 300);
 }  
