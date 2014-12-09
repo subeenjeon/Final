@@ -8,6 +8,8 @@ var img2;
 var fft;
 var count;
 
+var a;
+
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp3")
 }
@@ -27,6 +29,8 @@ function setup() {
 
   count = 0;
 
+  a = 200;
+
 }
 
 function draw() {
@@ -44,6 +48,6 @@ function draw() {
 
   var vol = analyzer.getLevel();
 
-  image(img1, 430, 300, 50+vol*800, 70+vol*800);
-  image(img2, 1225, 300, 50+vol*800, 70+vol*800);
+  image(img1, 430-a/2, 300-a/2, 50+vol*800+a, 70+vol*800+a);
+  image(img2, 1225-a/2, 300-a/2, 50+vol*800+a, 70+vol*800+a);
 }  
