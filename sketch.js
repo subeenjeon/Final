@@ -29,7 +29,7 @@ function setup() {
 
   count = 0;
 
-  a = 200;
+  a = 10;
 
 }
 
