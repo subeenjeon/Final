@@ -46,3 +46,11 @@ function draw() {
   image(img1, 430-(vol*200)/2, 300-(vol*200)/2, 203+(vol*200), 335+(vol*200));
   image(img2, 1225-(vol*200)/2, 300-(vol*200)/2, 203+(vol*200), 335+(vol*200));
 }  
+
+function word(){
+  fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+  stroke(255);
+  textSize(20);
+  textFont("NanumbarunGodic");
+  text("If you click the circle, then it will changes", 130, 250);
+}
