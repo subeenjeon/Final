@@ -41,6 +41,8 @@ function draw() {
     count =0;
   }
 
+  word();
+
   var vol = analyzer.getLevel();
 
   image(img1, 430-(vol*200)/2, 300-(vol*200)/2, 203+(vol*200), 335+(vol*200));
@@ -48,9 +50,8 @@ function draw() {
 }  
 
 function word(){
-  fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
-  stroke(0);
+  fill(0);
   textSize(200);
-  textFont("ATRotisSemisans");
+  textFont();
   text("Hello! I'm subeen Jeon. You can visited my SNS", 130, 250);
 }
