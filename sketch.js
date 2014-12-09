@@ -8,8 +8,6 @@ var img2;
 var fft;
 var count;
 
-var a;
-
 function preload(){
   sound = loadSound("./ODESZA - Bloom.mp3")
 }
@@ -28,9 +26,6 @@ function setup() {
   analyzer = new p5.Amplitude();
 
   count = 0;
-
-  a = 10;
-
 }
 
 function draw() {
@@ -48,6 +43,6 @@ function draw() {
 
   var vol = analyzer.getLevel();
 
-  image(img1, 430-a/2, 300-a/2, 203+a, 339+a, 50+vol*800, 80+vol*800);
-  image(img2, 1225-a/2, 300-a/2, 203+a, 339+a, 50+vol*800, 80+vol*800);
+  image(img1, 430-a/2, 300-a/2, 203+a, 339+a, 50+(vol*800)/2, 80+(vol*800)/2;
+  image(img2, 1225-a/2, 300-a/2, 203+a, 339+a, 50+(vol*800)/2, 80+(vol*800)/2;
 }  
