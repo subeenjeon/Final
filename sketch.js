@@ -38,5 +38,6 @@ function draw() {
     count =0;
   }
 
-  image(img, mouseX, mouseY, 10+amp.getLevel()*300,10+amp.getLevel()*300);
+image(img, 0, 0);
+  
 }
