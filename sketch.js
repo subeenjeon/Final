@@ -2,7 +2,7 @@ var pt;
 var checkDraw = [];
 var sound, amp;
 
-var img1;
+var img;
 var img2;
 
 var fft;
@@ -19,7 +19,7 @@ function setup() {
   background(0);
   pt = loadImage("./home-pattern.png");
 
-  img1 = loadImage("./left.png");
+  img = loadImage("./left.png");
   img2 = loadImage("./right.png");
 
   sound.loop();
@@ -40,6 +40,6 @@ function draw() {
     count =0;
   }
 
-  image(img1, 400, 300);
+  image(img, 400, 300);
   image(img2, 1200, 300);
 }  
