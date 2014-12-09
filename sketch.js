@@ -21,7 +21,6 @@ function setup() {
   pt = loadImage("./home-pattern.png");
 
   img1 = loadImage("./left.png");
-
   img2 = loadImage("./right.png");
 
   sound.loop();
@@ -42,6 +41,6 @@ function draw() {
     count =0;
   }
 
-  image(img2, 1200, 300);
   image(img1, 400, 300);
+  image(img2, 1200, 300);
 }  
