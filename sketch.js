@@ -51,6 +51,6 @@ function word(){
   fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   stroke(255);
   textSize(20);
-  textFont("Godic");
-  text("If you click the circle, then it will changes", 130, 250);
+  textFont("ATRotisSemisans");
+  text("Hello! I'm subeen Jeon. You can visited my SNS", 130, 250);
 }
