@@ -38,6 +38,6 @@ function draw() {
     count =0;
   }
 
-image(img, 0, 0, img.width/2, img.height/2);
+image(img, 400, 400, img.width/2, img.height/2);
   
 }
