@@ -43,6 +43,6 @@ function draw() {
 
   var vol = analyzer.getLevel();
 
-  image(img1, 430, 300, 50+(vol*800)/2, 80+(vol*800)/2);
+  image(img1, 430, 300, (50+vol*800)/2, (80+vol*800)/2);
   image(img2, 1225, 300, 50+(vol*800)/2, 80+(vol*800)/2);
 }  
