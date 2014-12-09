@@ -53,5 +53,5 @@ function word(){
   fill(0);
   textSize(20);
   textFont("ATRotisSemisans");
-  text("Hello! I'm subeen Jeon. You can visited my SNS", 900, 1000);
+  text("Hello! I'm subeen Jeon. You can visited my SNS", 900, 500);
 }
