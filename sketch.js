@@ -2,7 +2,7 @@ var pt;
 var checkDraw = [];
 var sound, amp;
 
-var centerimg;
+var center;
 
 var fft;
 var count;
@@ -18,7 +18,7 @@ function setup() {
   background(0);
   pt = loadImage("./home-pattern.jpg");
 
-  centerimg = loadImage("./center.png");
+  center = loadImage("./center.png");
 
   sound.loop();
   count = 0;
@@ -38,5 +38,5 @@ function draw() {
     count =0;
   }
 
-  image(centerimg, mouseX, mouseY, 10+amp.getLevel()*300,10+amp.getLevel()*300);
+  image(center, mouseX, mouseY, 10+amp.getLevel()*300,10+amp.getLevel()*300);
 }
