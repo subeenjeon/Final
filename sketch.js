@@ -2,7 +2,8 @@ var pt;
 var checkDraw = [];
 var sound, amp;
 
-var img;
+var img1;
+var img2;
 
 var fft;
 var count;
@@ -18,7 +19,8 @@ function setup() {
   background(0);
   pt = loadImage("./home-pattern.png");
 
-  img = loadImage("./center.png");
+  img1 = loadImage("./left.png");
+  img2 = loadImage("./right.png");
 
   sound.loop();
   count = 0;
@@ -38,5 +40,6 @@ function draw() {
     count =0;
   }
 
-image(img, 400, 300, img.width/2, img.height/2, 10+amp.getLevel()*300,10+amp.getLevel()*300);
-}
+  image(img1, 400, 300, 10+amp.getLevel()*300,10+amp.getLevel()*300);
+  image(img2, 1200, 300, 10+amp.getLevel()*300,10+amp.getLevel()*300);
+}  
