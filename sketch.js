@@ -55,20 +55,20 @@ function word(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("Hello! I'm subeen Jeon.", 840, 600);
+  text("Hello! I'm subeen Jeon.", 850, 600);
 }
 
 function word2(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("You Are listening to Odesza's Bloom!", 790, 620);
+  text("You Are listening to Odesza's Bloom!", 800, 620);
 }
 
 function word3(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("If you press the button above to go to my SNS accounts.", 720, 640);
+  text("If you press the button above to go to my SNS accounts.", 730, 640);
 }
 
