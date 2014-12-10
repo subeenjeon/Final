@@ -55,7 +55,7 @@ function word(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("Hello! I'm subeen Jeon.", 800, 500);
+  text("Hello! I'm subeen Jeon.", 830, 500);
 }
 
 function word2(){
