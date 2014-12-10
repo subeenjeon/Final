@@ -52,6 +52,7 @@ function draw() {
 }  
 
 function word(){
+  alin: center;
   fill(0);
   textSize(15);
   textFont("Proid Sans");
@@ -69,6 +70,6 @@ function word3(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("If you press the button above to go to my sns account.", 600, 540);
+  text("If you press the button above to go to my SNS accounts.", 600, 540);
 }
 
