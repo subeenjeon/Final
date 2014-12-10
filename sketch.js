@@ -61,13 +61,13 @@ function word(){
 function word2(){
   fill(0);
   textSize(15);
-  textFont("ATRotisSemisans");
+  textFont("Ubuntu");
   text("You Are listening to Odesza's Bloom!", 600, 520);
 }
 
 function word3(){
   fill(0);
   textSize(15);
-  textFont("ATRotisSemisans");
+  textFont("Ubuntu");
   text("If you press the button above to go to my sns account.", 600, 540);
 }
