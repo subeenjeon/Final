@@ -53,5 +53,5 @@ function word(){
   fill(0);
   textSize(15);
   textFont("ATRotisSemisans");
-  text("Hello! I'm subeen Jeon. <br>You Are listening to Odesza's Bloom! <br>If you press the button above to go to my sns account .", 600, 350);
+  text("Hello! I'm subeen Jeon.You Are listening to Odesza's Bloom!If you press the button above to go to my sns account .", 600, 900);
 }
