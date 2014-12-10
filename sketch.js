@@ -54,21 +54,21 @@ function draw() {
 function word(){
   fill(0);
   textSize(15);
-  textFont("Play");
+  textFont("Arimo");
   text("Hello! I'm subeen Jeon.", 600, 500);
 }
 
 function word2(){
   fill(0);
   textSize(15);
-  textFont("Ubuntu");
+  textFont("Arimo");
   text("You Are listening to Odesza's Bloom!", 600, 520);
 }
 
 function word3(){
   fill(0);
   textSize(15);
-  textFont("Ubuntu");
+  textFont("Arimo");
   text("If you press the button above to go to my sns account.", 600, 540);
 }
 
