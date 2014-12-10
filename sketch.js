@@ -52,7 +52,6 @@ function draw() {
 }  
 
 function word(){
-  alin: center;
   fill(0);
   textSize(15);
   textFont("Proid Sans");
