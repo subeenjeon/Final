@@ -62,13 +62,13 @@ function word2(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("You Are listening to Odesza's Bloom!", 800, 620);
+  text("You Are listening to Odesza's Bloom!", 790, 620);
 }
 
 function word3(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("If you press the button above to go to my SNS accounts.", 710, 640);
+  text("If you press the button above to go to my SNS accounts.", 720, 640);
 }
 
