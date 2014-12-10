@@ -54,7 +54,7 @@ function draw() {
 function word(){
   fill(0);
   textSize(15);
-  textFont("ATRotisSemisans");
+  textFont("Axel Lymphos");
   text("Hello! I'm subeen Jeon.", 600, 500);
 }
 
