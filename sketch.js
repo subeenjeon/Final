@@ -65,7 +65,7 @@ function word2(){
   text("You Are listening to Odesza's Bloom!", 600, 520);
 }
 
-function word2(){
+function word3(){
   fill(0);
   textSize(15);
   textFont("ATRotisSemisans");
