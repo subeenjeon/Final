@@ -6,7 +6,6 @@ Final (http://subeenjeon.github.io/Final/)
 
 <Source>
 : loadSound로 ODESZA - Bloom 음악을 불러왔습니다.
-
 : sound.loop()로 음악을 무한 재생시켰습니다.
 : Inkskape 플러그인을 사용하여 타이틀 이미지를 제작, path를 불러와서 애니메이션 효과를 주었습니다.
 : Social 아이콘을 만들어서 mouse horver 되었을 때 페이지 톤인매너를 살려 색상들을 지정해주었습니다.
