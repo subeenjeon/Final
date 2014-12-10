@@ -62,7 +62,7 @@ function word2(){
   fill(0);
   textSize(15);
   textFont("Proid Sans");
-  text("You Are listening to Odesza's Bloom!", 805, 620);
+  text("You Are listening to Odesza's Bloom!", 800, 620);
 }
 
 function word3(){
