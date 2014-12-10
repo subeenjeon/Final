@@ -42,7 +42,9 @@ function draw() {
   }
 
   word();
-
+  word2();
+  word3();
+  
   var vol = analyzer.getLevel();
 
   image(img1, 430-(vol*200)/2, 300-(vol*200)/2, 203+(vol*200), 335+(vol*200));
@@ -53,5 +55,19 @@ function word(){
   fill(0);
   textSize(15);
   textFont("ATRotisSemisans");
-  text("Hello! I'm subeen Jeon.You Are listening to Odesza's Bloom!If you press the button above to go to my sns account .", 600, 500);
+  text("Hello! I'm subeen Jeon.", 600, 500);
+}
+
+function word2(){
+  fill(0);
+  textSize(15);
+  textFont("ATRotisSemisans");
+  text("You Are listening to Odesza's Bloom!", 600, 520);
+}
+
+function word2(){
+  fill(0);
+  textSize(15);
+  textFont("ATRotisSemisans");
+  text("If you press the button above to go to my sns account.", 600, 540);
 }
