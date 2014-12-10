@@ -71,3 +71,4 @@ function word3(){
   textFont("Ubuntu");
   text("If you press the button above to go to my sns account.", 600, 540);
 }
+
