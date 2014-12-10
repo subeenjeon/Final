@@ -53,22 +53,22 @@ function draw() {
 
 function word(){
   fill(0);
-  textSize(15);
+  textSize(16);
   textFont("Proid Sans");
-  text("Hello! I'm subeen Jeon.", 850, 550);
+  text("Hello! I'm subeen Jeon.", 850, 580);
 }
 
 function word2(){
   fill(0);
-  textSize(15);
+  textSize(16);
   textFont("Proid Sans");
-  text("You Are listening to Odesza's Bloom!", 800, 570);
+  text("You Are listening to Odesza's Bloom!", 800, 600);
 }
 
 function word3(){
   fill(0);
-  textSize(15);
+  textSize(16);
   textFont("Proid Sans");
-  text("If you press the button above to go to my SNS accounts.", 730, 590);
+  text("If you press the button above to go to my SNS accounts.", 730, 620);
 }
 
